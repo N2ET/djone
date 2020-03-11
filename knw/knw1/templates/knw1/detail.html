@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>knw1 detail</title>
+    </head>
+    <body>
+        <h3>Question: {{question.question_text}}</h3>
+        <ul>
+        <!-- 在此处写了错误的变量名只是不会显示，不会抛出异常，如question写成了qusetion -->
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

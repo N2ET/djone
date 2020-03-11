@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>knw1 index</title>
+    </head>
+    <body>
+        <h3>Question List:</h3>
+        {% if question_list %}
+            <ul>
+                {% for question in question_list %}
+                    <li>
+                    <div>id: {{ question.id }}</div>
+                    <div>text: {{ question.question_text }}</div>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>no data!</p>
+        {% endif %}
+    </body>
+</html>
