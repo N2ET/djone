@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd35c72-4929-490b-a655-82f9cddd6961" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knw/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/knw/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knw/knw1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/knw/knw1/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knw/knw1/templates/knw1/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/knw/knw1/templates/knw1/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knw/knw1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/knw/knw1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knw/knw1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/knw/knw1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +34,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="31" />
+          <entry key="gitignore" value="32" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="32" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -79,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -230,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
