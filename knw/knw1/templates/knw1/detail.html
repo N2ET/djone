@@ -10,5 +10,18 @@
             <li>{{ choice.choice_text }}</li>
         {% endfor %}
         </ul>
+
+        <div>
+            {% if error_message %} {{ error_message }} {% endif %}
+
+            <form action="{% url 'knw1:vote' question.id %}" method="post">
+            {% csrf_token %}
+            {% for choice in question.choice_set.all %}
+                <input type="radio" name="choice" id="{{ forloop.counter }}" value="{{ choice.id }}" />
+                <label for="{{ forloop.counter }}">{{ choice.choice_text }}</label>
+            {% endfor %}
+                <input type="submit" value="vote" />
+            </form>
+        </div>
     </body>
 </html>

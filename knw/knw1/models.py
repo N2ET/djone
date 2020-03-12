@@ -10,6 +10,7 @@ class Question(models.Model):
     def __str__(self):
         return self.question_text
 
+
 class Choice(models.Model):
     
     # 生成的foreginKey为question_id，自动加上了_id，
