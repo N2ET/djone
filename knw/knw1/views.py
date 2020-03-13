@@ -9,6 +9,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import Http404, HttpResponseRedirect
 from django.urls import reverse
 
+from django.views import generic
+
 # Create your views here.
 def index(request):
    
@@ -77,3 +79,16 @@ def vote(request, question_id):
         )
 
     # return HttpResponse('vote -> 问题id：%s' % question_id)
+
+
+class IndexView(generic.ListView):
+    template_name = 'knw1/index.html'
+     
+
+    def get_queryset(self):
+        return Question.objects.order_by('-pub_date')
+
+
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'knw1:detail'
