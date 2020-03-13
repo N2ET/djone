@@ -4,15 +4,17 @@
     </head>
     <body>
         <h3>Question: {{question.question_text}}</h3>
-        <ul>
+<!--        <ul>-->
         <!-- 在此处写了错误的变量名只是不会显示，不会抛出异常，如question写成了qusetion -->
-        {% for choice in question.choice_set.all %}
-            <li>{{ choice.choice_text }}</li>
-        {% endfor %}
-        </ul>
+<!--        {% for choice in question.choice_set.all %}-->
+<!--            <li>{{ choice.choice_text }}</li>-->
+<!--        {% endfor %}-->
+<!--        </ul>-->
 
         <div>
-            {% if error_message %} {{ error_message }} {% endif %}
+            {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+            {% endif %}
 
             <form action="{% url 'knw1:vote' question.id %}" method="post">
             {% csrf_token %}

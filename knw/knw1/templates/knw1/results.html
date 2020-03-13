@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>results</title>
+</head>
+<body>
+    <div>
+        <h3>Question: {{ question.question_text }}</h3>
+        <div>
+            <p>votes:</p>
+            <ul>
+            {% for choice in question.choice_set.all %}
+                <li>
+                    {{ choice.choice_text }}: {{ choice.votes }}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -47,8 +47,15 @@ def detail(request, question_id):
         
     # return HttpResponse('deatil -> 问题id：%s' % question_id)
 
+
 def results(request, question_id):
-    return HttpResponse('results -> 问题id：%s' % question_id)
+
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'knw1/results.html', {
+        'question': question
+    })
+
+    # return HttpResponse('results -> 问题id：%s' % question_id)
 
 def vote(request, question_id):
 
@@ -58,7 +65,7 @@ def vote(request, question_id):
     except (KeyError, Choice.DoesNotExist):
         return render(request, 'knw1/detail.html', {
             'question': question,
-            'error_message': 'no choice'
+            'error_message': 'invalid choice'
         })
 
     else:
